@@ -1,5 +1,6 @@
 import React from "react";
 import pics from "../images/pic.jpg";
+import intro from "../images/introbord.png";
 import { FaGithub } from "react-icons/fa";
 // import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -19,7 +20,7 @@ import { SiRedux } from "react-icons/si";
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20  ">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 ">
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
             <span className="text-xl">Welcome, pioneers of technology!</span>
@@ -55,7 +56,7 @@ const Home = () => {
                 <h1 className="font-bold text-center">Available on</h1>
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="https://github.com/Udaya-Pujari" target="_blank" >
+                    <a href="https://github.com/Udaya-Pujari" target="_blank">
                       <FaGithub
                         className="text-2xl cursor-pointer"
                         size={"30"}
@@ -124,10 +125,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 md:ml-60 md:mt-6 order-1 ml-20 mt-5">
+          <div className="md:w-1/2 md:ml-60 md:mt-6 order-1 ml-20 mt-5  ">
             <img
-              src={pics}
-              className="rounded-full md:w-[410px] md:h-[400px]  w-[250px] h-[250px]"
+              // src={pics}
+              src={intro}
+              className="rounded-full border border-gray-300 md:w-[410px] md:h-[400px]  w-[250px] h-[250px]  hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"
               alt="profile pic"
             />
           </div>
