@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import pics from "../images/pic.jpg";
+import { Link } from "react-scroll";
+import Resume from "./Resume";
+
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -16,24 +19,24 @@ const Navbar = () => {
     },
     {
       id: 3,
-      text: "Skills",
-    },
-    {
-      id: 4,
-      text: "portfolio",
-    },
-    {
-      id: 5,
       text: "Experince",
     },
     {
-      id: 6,
-      text: "contacts",
+      id: 4,
+      text: "Skills",
     },
+    {
+      id: 5,
+      text: "Portfolio",
+    },
+    // {
+    //   id: 6,
+    //   text: "Resume",
+    // },
   ];
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 bg-gradient-to-r from-cyan-100 to-violet-50">
+      <div className="  mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 bg-gradient-to-r from-cyan-100 to-violet-50">
         <div className="flex justify-between items-center h-16">
           <div className="flex space-x-2">
             <img
@@ -57,10 +60,21 @@ const Navbar = () => {
                     className="hover:scale-110 duration-200 cursor-pointer"
                     key={id}
                   >
-                    {text}
+                    <Link
+                      to={text}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      activeClass="active"
+                    >
+                      {text}
+                    </Link>
                   </li>
                 );
               })}
+              <button>
+                <Resume />
+              </button>
             </ul>
             <div
               className="md:hidden"
@@ -68,13 +82,13 @@ const Navbar = () => {
                 setMenu(!menu);
               }}
             >
-              {menu ? <AiOutlineMenu size={24} /> : <IoCloseSharp size={24} />}
+              {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
             </div>
           </div>
         </div>
         {/*  */}
         {menu && (
-          <div>
+          <div className="bg-white">
             <ul className="md:hidden flex flex-col items-center justify-center h-screen space-y-4 text-xl">
               {navItem.map(({ id, text }) => {
                 return (
@@ -82,10 +96,26 @@ const Navbar = () => {
                     className="hover:scale-x-110 duration-200 cursor-pointer font-semibold"
                     key={id}
                   >
-                    {text}
+                    {/* {text} */}
+                    <Link
+                      onClick={() => {
+                        setMenu(!menu);
+                      }}
+                      to={text}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      activeClass="active"
+                    >
+                      {text}
+                    </Link>
                   </li>
                 );
               })}
+
+              <button>
+                <Resume />
+              </button>
             </ul>
           </div>
         )}

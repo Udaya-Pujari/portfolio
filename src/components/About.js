@@ -6,10 +6,10 @@ import { FaCalendarAlt } from "react-icons/fa";
 const About = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+      <div name="About" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
         <div>
           <h1 className="text-2xl font-bold mb-5">
-            <span className="text-sky-500">A</span>bout
+            <span className="text-red-600">A</span>bout
           </h1>
           <p>
             Hello, I am Udaya Pujari a passionate front-end developer with good
@@ -19,7 +19,7 @@ const About = () => {
           </p>
           <br></br>
           <h1 className=" font-semibold text-xl">
-            <span className="text-sky-500">E</span>ducation
+            <span className="text-red-600">E</span>ducation
           </h1>
           <br />
           <span className="">

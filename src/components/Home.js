@@ -20,7 +20,10 @@ import { SiRedux } from "react-icons/si";
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 ">
+      <div
+        name="Home"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+      >
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
             <span className="text-xl">Welcome, pioneers of technology!</span>
@@ -38,8 +41,8 @@ const Home = () => {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify ">
-              My name is <span className="text-sky-500">U</span>daya{" "}
-              <span className="text-sky-500">P</span>
+              My name is <span className="text-red-500">U</span>daya{" "}
+              <span className="text-red-500">P</span>
               ujari, a dedicated Front-End Developer with extensive experience
               in building and optimizing user-centric web applications. I am
               passionate about utilizing modern web technologies and best
@@ -136,7 +139,7 @@ const Home = () => {
         </div>
       </div>
       {/* <br></br> */}
-      <hr></hr>
+      <hr className=""></hr>
     </>
   );
 };
