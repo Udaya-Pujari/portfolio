@@ -11,7 +11,7 @@ const About = () => {
           <h1 className="text-2xl font-bold mb-5">
             <span className="text-red-600">A</span>bout
           </h1>
-          <p>
+          <p className="text-[19px]">
             Hello, I am Udaya Pujari a passionate front-end developer with good
             hands on experince in developing the web applications using
             JavaScript, ReactJS, HTML, CSS, Tailwind CSS,Bootstrap,Redux Toolkit
@@ -22,18 +22,18 @@ const About = () => {
             <span className="text-red-600">E</span>ducation
           </h1>
           <br />
-          <span className="">
+          <span className="text-[19px]">
             <span className="flex ">
               <PiStudentFill size={25} /> Bachelor of Engineering in Computer
               Science and Engineering.
             </span>
             <br />
-            <span className="flex">
+            <span className="flex text-[19px]">
               <LiaUniversitySolid size={25} />
               Basaveshwar Engineering College Bagalkot, Karnataka.
             </span>
             <br />
-            <span className="flex">
+            <span className="flex text-[19px]">
               <FaCalendarAlt size={25} />
               from 2016 - to 2020
             </span>

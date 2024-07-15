@@ -33,14 +33,14 @@ const Home = () => {
               <ReactTyped
                 // typedRef={setTyped}
                 className="text-red-700 font-bold"
-                strings={["Web Developer", " "]}
+                strings={["Web Developer", "Software Developer "]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
               />
             </div>
             <br />
-            <p className="text-sm md:text-md text-justify ">
+            <p className="text-sm md:text-md text-justify text-[19px]">
               My name is <span className="text-red-500">U</span>daya{" "}
               <span className="text-red-500">P</span>
               ujari, a dedicated Front-End Developer with extensive experience
@@ -132,7 +132,7 @@ const Home = () => {
             <img
               // src={pics}
               src={intro}
-              className="rounded-full border border-gray-300 md:w-[410px] md:h-[400px]  w-[250px] h-[250px]  hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"
+              className="md:opacity-40 rounded-full border border-gray-300 md:w-[410px] md:h-[400px]  w-[250px] h-[250px]  hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"
               alt="profile pic"
             />
           </div>

@@ -75,7 +75,7 @@ const Skills = () => {
         <div className="flex">
           <div className="w-1/2">
             <img
-              className="w-3/4 h-full rounded-full  hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"
+              className="hidden md:block md:opacity-50 w-3/4 h-full rounded-full  hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"
               // src="https://cdn-assets.theforage.com/icons/hiring-paths/software-engineering-career-ed.svg"
               src={skills}
               alt="img"
@@ -84,7 +84,7 @@ const Skills = () => {
           <div className="w-1/2 grid grid-cols-1 ml-5  md:grid-cols-3 space-y-2">
             {cardItems.map(({ id, logo, name }) => (
               <div key={id}>
-                <div className="hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]             border-[1px] md:h-[90px] md:w-[100px]  rounded-2xl shadow-2xl p-1 cursor-pointer hover:bg-gradient-to-t from-cyan-300 to-rose-100 hover:scale-110 duration-200 md:border-[2px] md:border-sky-500">
+                <div className="hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]           border-[1px] md:h-[90px] md:w-[100px]  rounded-2xl shadow-2xl p-1 cursor-pointer hover:bg-gradient-to-t from-cyan-300 to-rose-100 hover:scale-110 duration-200 md:border-[2px] md:border-sky-500">
                   <h1 className="text-sm mx-2">{name}</h1>
                   <img
                     src={logo}

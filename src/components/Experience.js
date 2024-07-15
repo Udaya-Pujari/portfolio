@@ -48,7 +48,7 @@ const Experience = () => {
         <div className="flex">
           <img
             src={work}
-            className="hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] w-[50px] h-[50px] border-[2px] border-white rounded-full"
+            className=" hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] w-[50px] h-[50px] border-[2px] border-white rounded-full"
             alt="work"
           />
           <p className="mt-1">
@@ -56,15 +56,15 @@ const Experience = () => {
               Software Developer
             </span>{" "}
             <br />
-            <span className="text-slate-500">
+            <span className="text-black-500">
               Techno Touch Business Solutions
             </span>
-            <span className="text-slate-500 ml-15 ml-20">
+            <span className="text-black-500 ml-15 ml-20">
               Aug 2022 - Present
             </span>
           </p>
         </div>
-        <div className="flex mt-12  border-none hover:bg-gradient-to-t from-cyan-300 to-rose-100 ">
+        <div className="flex mt-12  border-none text-[19px] ">
           <div className="w-3/4 ml-5">
             {Experince.map(({ id, text }) => {
               return (
@@ -77,7 +77,7 @@ const Experience = () => {
             })}
           </div>
           <div className="hidden md:block w-1/4 ">
-            <img className="md:h-full rounded-full" src={exp} alt="exp" />
+            <img className="md:h-full rounded-full md:opacity-60" src={exp} alt="exp" />
           </div>
         </div>
       </div>

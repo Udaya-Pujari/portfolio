@@ -13,7 +13,7 @@ const Portfolio = () => {
           <h1 className="text-2xl font-bold mb-5">
             <span className="text-red-600">P</span>ortfolio
           </h1>
-          <span className="underline font-semibold">Featured Projects:</span>
+          <span className="underline font-semibold text-[19px]">Featured Projects:</span>
           <div className="flex md:flex-row flex-col md:space-x-96 mt-10 md:ml-32">
             <div className="hover:bg-gradient-to-b from-cyan-100 to-cyan-200 md:w-[390px] md:h-[390px] w-full h-[400px] border-[2px] border-sky-500 rounded-lg shadow-lg p-1   mb-4 md:mb-0 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]">
               <div className="h-1/2 ">

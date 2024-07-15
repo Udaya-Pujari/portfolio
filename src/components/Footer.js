@@ -29,10 +29,10 @@ const Footer = () => {
 
               {/* <FaDiscord size={"30"} /> */}
             </div>
-            <span className="mt-2 border-t border-gray-700 pt-2 flex flex-col items-center">
+            <span className="mt-2 border-t border-gray-700 pt-2 flex flex-col items-center text-[19px]">
               <p>udaysp194@gmail.com</p>
             </span>
-            <div className="mt-2 border-t border-gray-700 pt-2 flex flex-col items-center">
+            <div className="mt-2 border-t border-gray-700 pt-2 flex flex-col items-center text-[19px]">
               <p>Copyright ©️ 2024 Udaya Pujari - All Rights reserved. </p>
             </div>
           </div>
